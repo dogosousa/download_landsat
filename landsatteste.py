@@ -20,6 +20,6 @@ df = gpd.GeoDataFrame.from_features(s)
 lc = [x for x in df['sceneID']]
 
 d = downloader.Downloader(download_dir='~/Download/LC8',
-                          usgs_user='user_name', usgs_pass='password')
-
+                          usgs_user='', usgs_pass='')
+print(s)
 d.download(lc)
